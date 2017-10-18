@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    current_username
+    @current_user = User.find_by_id(session[:user_id])
   end
 
   get '/logout' do
