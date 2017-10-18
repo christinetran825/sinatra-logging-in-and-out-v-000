@@ -21,7 +21,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-
+    current_username
   end
 
   get '/logout' do
