@@ -5,4 +5,5 @@ class User < Application::Base
     t.strings :password
     t.integers :balance
   end
+  
 end
