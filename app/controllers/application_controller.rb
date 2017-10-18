@@ -12,6 +12,8 @@ class ApplicationController < Sinatra::Base
 
   post '/login' do
     @user = User.create(params[:username])
+    
+    redirec to '/account'
   end
 
   get '/account' do
@@ -24,4 +26,3 @@ class ApplicationController < Sinatra::Base
 
 
 end
-
