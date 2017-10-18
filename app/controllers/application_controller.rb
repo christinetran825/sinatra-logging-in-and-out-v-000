@@ -36,5 +36,4 @@ class ApplicationController < Sinatra::Base
     redirect to '/'
   end
 
-
 end
