@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
 
   post '/login' do
     @user = User.create(params[:username])
-    
+    session[:id]
     redirec to '/account'
   end
 
