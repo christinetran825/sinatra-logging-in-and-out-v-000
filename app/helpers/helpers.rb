@@ -5,7 +5,7 @@ class Helpers
   end
 
   def self.is_logged_in?(session)
-    # self.current_user
+    if self.current_user = @user_id
 
   end
 
